@@ -34,7 +34,7 @@ public class DAO {
 
 	}
 	
-	public static int addProduct(User p) {
+	public static int addUser(User p) {
 		if (factory == null)
 			setupFactory();
 		 // Get current session
@@ -54,7 +54,7 @@ public class DAO {
 		 return i;  
 	}
 	
-	public static List<User> getAllProducts(){
+	public static List<User> getAllUsers(){
 		if (factory == null)
 			setupFactory();
 		 // Get current session
@@ -64,13 +64,13 @@ public class DAO {
 		 hibernateSession.getTransaction().begin();
 		 
 		 //deprecated method & unsafe cast
-         List<User> products = hibernateSession.createQuery("FROM Product").list(); 
+         List<User> users = hibernateSession.createQuery("FROM User").list(); 
 		 
          // Commit transaction
          hibernateSession.getTransaction().commit();
       		 
       	 hibernateSession.close();  
       				    
-		return products;
+		return users;
 	}
 }

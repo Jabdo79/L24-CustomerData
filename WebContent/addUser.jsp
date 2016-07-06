@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
-<%@ page import="com.guenther.hibexample.DAO"%>  
+<%@ page import="cust.data.users.DAO"%>  
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
  
@@ -10,17 +10,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Hibernate Example</title>
+<title>Confirmation Page</title>
 </head>
 <body>
-<h1>Hibernate Example</h1>
-<jsp:useBean id="obj" class="com.guenther.hibexample.Product">  
+<h1>Confirmation Page</h1>
+<jsp:useBean id="person" class="cust.data.users.User">  
 </jsp:useBean>  
-<jsp:setProperty property="*" name="obj"/>
+<jsp:setProperty property="*" name="person"/>
 <%  
-int i=DAO.addProduct(obj); 
+int i=DAO.addUser(person); 
 if (i > 0)  
-	out.print("Product successfully added");  
+	out.print("Person successfully added");  
 else
 	out.println("Error; product not added");
 %>  

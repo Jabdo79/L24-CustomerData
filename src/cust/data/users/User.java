@@ -3,8 +3,9 @@ package cust.data.users;
 public class User {
 	private int id;
 	private String name;
-	private String category;
-	private double price;
+	private String pass;
+	private String email;
+	private String fullname;
 
 	public int getId() {
 		return id;
@@ -14,13 +15,22 @@ public class User {
 		return name;
 	}
 
-	public String getCategory() {
-		return category;
+	public String getPass() {
+		return pass;
 	}
 
-	public double getPrice() {
-		return price;
+	public String getEmail() {
+		return email;
 	}
+	
+	public String getFullname(){
+		return fullname;
+	}
+	
+	public void setFullname(String fullname){
+		this.fullname=fullname;
+	}
+	
 
 	public void setId(int id) {
 		this.id = id;
@@ -30,12 +40,12 @@ public class User {
 		this.name = name;
 	}
 
-	public void setCategory(String category) {
-		this.category = category;
+	public void setPass(String pass) {
+		this.pass = pass;
 	}
 
-	public void setPrice(double price) {
-		this.price = price;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	

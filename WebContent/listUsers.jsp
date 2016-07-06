@@ -2,8 +2,8 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*"%>
 <%@ page import="javax.servlet.http.*,javax.servlet.*" %>
-<%@ page import="com.guenther.hibexample.DAO"%>  
-<%@ page import="com.guenther.hibexample.Product"%>  
+<%@ page import="cust.data.users.DAO"%>  
+<%@ page import="cust.data.users.User"%>  
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
  
@@ -11,15 +11,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Hibernate Example</title>
+<title>All Users</title>
 </head>
 <body>
-<h1>Hibernate Example: Product Listing</h1>
+<h1>All Users</h1>
 <table>
 <%  
-List<Product> products = DAO.getAllProducts(); 
+List<User> users = DAO.getAllUsers(); 
 
-for (Product p: products) {
+for (User p: users) {
 	out.println ("<tr><td>" + p.getId() + "</td><td>" +
 		p.getName() + "</td><td>" + p.getCategory() 
 		+ "</td><td>" + p.getPrice() + "</td></tr>");
