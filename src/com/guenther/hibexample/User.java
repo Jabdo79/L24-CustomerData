@@ -1,6 +1,6 @@
 package com.guenther.hibexample;
 
-public class Product {
+public class User {
 	private int id;
 	private String name;
 	private String category;

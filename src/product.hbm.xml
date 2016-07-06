@@ -4,13 +4,14 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
   
  <hibernate-mapping>  
-	 <class name="com.guenther.hibexample.Product" table="groceries">  
+	 <class name="com.guenther.hibexample.User" table="users">  
 		 <id name="id" column="ID" type="int">  
 		 	<generator class="increment"></generator>  
 		 </id>  
 		 <property name="name" column="name" type="string"></property>  
-		 <property name="category" column="category" type="string"></property>  
-		 <property name="price" column="price" type="double"></property>  
+		 <property name="pass" column="pass" type="string"></property>  
+		 <property name="email" column="email" type="double"></property>  
+		 <property name="fullname" column="fullname" type="string"></property>  
 	 </class>      
  </hibernate-mapping>  
  
