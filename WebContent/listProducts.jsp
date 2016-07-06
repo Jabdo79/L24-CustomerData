@@ -15,9 +15,6 @@
 </head>
 <body>
 <h1>Hibernate Example: Product Listing</h1>
-<jsp:useBean id="obj" class="com.guenther.hibexample.Product">  
-</jsp:useBean>  
-<jsp:setProperty property="*" name="obj"/>
 <table>
 <%  
 List<Product> products = DAO.getAllProducts(); 
