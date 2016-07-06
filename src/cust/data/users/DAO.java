@@ -1,4 +1,4 @@
-package com.guenther.hibexample;
+package cust.data.users;
 
 import java.util.List;
 import org.hibernate.Session;

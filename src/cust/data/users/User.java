@@ -1,4 +1,4 @@
-package com.guenther.hibexample;
+package cust.data.users;
 
 public class User {
 	private int id;
