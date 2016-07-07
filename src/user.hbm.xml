@@ -4,14 +4,8 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-	<typedef name="encryptedString" class="org.jasypt.hibernate4.type.EncryptedStringType">
-		<param name="algorithm">PBEWithMD5AndTripleDES</param>
-		<param name="password">jasypt</param>
-		<param name="keyObtentionIterations">1000</param>
-	</typedef>
-
-	<class name="cust.data.users.User" table="users">
-		<id name="id" column="ID" type="int">
+<class name="cust.data.users.User" table="users">
+		<id name="id" column="id" type="int">
 			<generator class="increment"></generator>
 		</id>
 		<property name="name" column="name" type="string"></property>
@@ -20,4 +14,3 @@
 		<property name="fullname" column="fullname" type="string"></property>
 	</class>
 </hibernate-mapping>  
- 
