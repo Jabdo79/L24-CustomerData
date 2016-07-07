@@ -3,6 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>L24-CustomerData</groupId>
 	<artifactId>L24-CustomerData</artifactId>
+
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<build>
@@ -41,6 +42,12 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.39</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jasypt/jasypt-hibernate4 -->
+		<dependency>
+			<groupId>org.jasypt</groupId>
+			<artifactId>jasypt-hibernate4</artifactId>
+			<version>1.9.2</version>
 		</dependency>
 	</dependencies>
 </project>
