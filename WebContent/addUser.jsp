@@ -22,7 +22,7 @@ int i=DAO.addUser(person);
 if (i > 0)  
 	out.print("Person successfully added");  
 else
-	out.println("Error; product not added");
+	out.println("Error; person not added");
 %>  
 </body>
 </html>

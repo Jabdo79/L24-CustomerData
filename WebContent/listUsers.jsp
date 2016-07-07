@@ -16,6 +16,7 @@
 <body>
 <h1>All Users</h1>
 <table>
+<tr><th>ID</th><th>User Name</th><th>Email</th><th>Full Name</th></tr>
 <%  
 List<User> users = DAO.getAllUsers(); 
 
