@@ -15,7 +15,7 @@
 			<generator class="increment"></generator>
 		</id>
 		<property name="name" column="name" type="string"></property>
-		<property name="pass" column="pass" type="encryptedString"></property>
+		<property name="pass" column="pass" type="string"></property>
 		<property name="email" column="email" type="string"></property>
 		<property name="fullname" column="fullname" type="string"></property>
 	</class>
