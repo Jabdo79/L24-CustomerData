@@ -14,4 +14,3 @@
 		<property name="fullname" column="fullname" type="string"></property>
 	</class>
 </hibernate-mapping>  
- 

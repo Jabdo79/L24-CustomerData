@@ -18,4 +18,5 @@
 		<property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
 
 	</session-factory>
+
 </hibernate-configuration>
