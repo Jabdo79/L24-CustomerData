@@ -1,11 +1,11 @@
 package cust.data.users;
 
 import java.util.List;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 import org.hibernate.service.ServiceRegistry;
 
 public class DAO {
@@ -73,5 +73,14 @@ public class DAO {
       	 hibernateSession.close();  
       				    
 		return users;
+	}
+	
+	public static void deleteUser(int id){
+		Session hibernateSession = factory.getCurrentSession();
+		hibernateSession.beginTransaction();
+		User user = new User();
+		user.setId(id);
+		hibernateSession.delete(user);
+		hibernateSession.getTransaction().commit();
 	}
 }
